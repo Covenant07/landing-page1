@@ -1,78 +1,105 @@
 *{
-    font-size: 16px;
-}
-body{
-    background-image: url("pic1.jpg");
-    color: white;
-    min-width: 0;
-    min-height: 0;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
 }
 .header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 5px;
-    align-items: center;
+
 }
-.left{
-    display: flex;
+.header .logo a{
+    font-family: 'Rubik Puddles', cursive;
+    color: blue;
+    text-decoration: none;
 }
-.left-align,.right-align{
-    margin: 3px;
-    padding: 2px;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+.header .logo{
+    padding: 10px 15px;
 }
-.right{
-    display: flex;
+.header .login-sign-up a{
+    text-decoration: none;
+    color: white;
 }
-.mid{
-    word-spacing: 1px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.press{
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 5px 15px;
-    margin: 2px 7px;
-    width: 40px;
+.header .login-sign-up li{
+    border: 1px solid blue;
+    background-color: blue;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 70px;
+    height: fit-content;
     text-align: center;
-    font-size: 12px;
 }
-.right-align{
-    align-items: center;
-    margin-right: 5px;
+.header .login-sign-up ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 15px;
+    gap: 10px;
+    
 }
-#span1,#span2{
-    font-size: 7rem;
+.main-content .section1{
+    padding: 20px 30px;
+    text-align: center;
+}
+.main-content .section1 .topic1{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+.main-content .arrow{
+    box-shadow: 0 0 5px black;
+    border-radius: 35px;
+    padding: 15px;
+    margin: 20px 10px;
+    text-align: center;
+    color: blue;
+}
+.main-form-content{
+    background-image: url(Plants.png);
+    background-size: cover;
+    box-shadow: 0 0 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    margin: 60px 400px;
+    padding: 30px;
+    border-radius: 5px;
+    flex-direction: column;
 }
-.body{
-    margin-top: 150px;
+.logo{
+    font-family: 'Rubik Puddles', cursive;
+    color: blue;
 }
-#span3,#span4{
-    display: flex;
-    justify-content: center;
+.form{
+    border: none;
+    margin: 5px ;
+    border-bottom: 2px solid blue;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.body1{
-    line-height: 55px;
+form{
+    padding: 15px 2px;
 }
-.body2{
-    line-height: 10px;
-    margin-top: 5px;
+.main-form-content label{
+    font-size: 10px;
 }
-.learn{
-    display: flex;
-    justify-content: center;
-    border: 2px solid white;
-    width: 120px;
-    padding: 7px 10px;
-}
-.lc{
+.main-form-content form .submit{
+    padding: 10px;
+    border-radius: 1000px;
     margin-top: 8px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    background-color: blue;
+    width: 100%;
+    border: none;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.main-form-content p a{
+    text-decoration: none;
+    color: blue;
+}
+.form:focus{
+    box-shadow: 0 0 3px black;
+    padding: 4px;
 }
